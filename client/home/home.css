@@ -33,16 +33,15 @@
 }
 
 .banner-text-title {
-	text-align: center;
+	text-align: left;
 	margin-bottom: 10%;
-	font-family: Helvetica;
 	letter-spacing: 5px;
     color: #333333;
+    font-size: 25px;
 }
 
 .banner-content {
 	color: #555;
-	font-family: Helvetica;
 	font-size: 16px;
 	line-height: 35px;
 }
