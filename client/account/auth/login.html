@@ -1,0 +1,29 @@
+<div class="container">
+<div ng-show="err" class="alert alert-danger row" style="margin:10px;">
+	<span>{{ err }}</span>
+</div>
+
+<div ng-show="notice" class="alert alert-success row" style="margin:10px;">
+	<span>{{ notice }}</span>
+</div>
+
+<div class="panel panle-head panel-auth">
+	<form ng-submit="logIn()" name="form">
+		<h2 class="auth-title">LOG IN</h2>
+		<hr class="hr-auth">
+
+		<div class="form-group">
+			<label>EMAIL</label>
+			<input type="email" name="email" class="form-control" placeholder="Email" ng-model="user.email" required>
+		</div>
+
+		<div class="form-group">
+			<label>PASSWORD</label>
+			<input type="password" namd="password" class="form-control" placeholder="Password" ng-model="user.password" required="">
+		</div>
+
+		<button type="submit" class="btn btn-primary btn-auth">LOG IN</button>
+		<!-- <a type="button" ng-click="forgetPassword()" class="btn" style="margin-left:10px">FORGET_PASSWORD?</a> -->
+	</form>
+</div>
+</div>

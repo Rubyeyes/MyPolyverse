@@ -1,0 +1,57 @@
+var mongoose = require('mongoose');
+
+//create a new schema
+var FoodSchema = new mongoose.Schema({
+	NDB_No: Number,
+	Shrt_Desc: String,
+	Water: Number,
+	Energ_Kcal: Number,
+	Protein: Number,
+	Lipid_Tot: Number,
+	Ash: Number,
+	Carbohydrt: Number,
+	Fiber_TD: Number,
+	Sugar_Tot: Number,
+	Calcium: Number,
+	Iron: Number,
+	Magnesium: Number,
+	Phosphorus: Number,
+	Potassium: Number,
+	Sodium: Number,
+	Zinc: Number,
+	Copper: Number,
+	Manganese: Number,
+	Selenium: Number,
+	Vit_C: Number,
+	Thiamin: Number,
+	Riboflavin: Number,
+	Niacin: Number,
+	Panto_Acid: Number,
+	Vit_B6: Number,
+	Folate_Tot: Number,
+	Folic_Acid: Number,
+	Food_Folate: Number,
+	Folate_DFE: Number,
+	Choline_Tot: Number,
+	Vit_B12: Number,
+	Vit_A_IU: Number,
+	Vit_A_RAE: Number,
+	Retinol: Number,
+	Alpha_Carot: Number,
+	Beta_Carot: Number,
+	Lycopene: Number,
+	Lut_Zea: Number,
+	Vit_E: Number,
+	Vit_D_mcg: Number,
+	Vit_D_IU: Number,
+	Vit_K: Number,
+	FA_Sat: Number,
+	FA_Mono: Number,
+	FA_Poly: Number,
+	Cholestrl: Number,
+	Shrt_Desc_zh_CN: String
+});
+
+mongoose.model('Food', FoodSchema);
+
+

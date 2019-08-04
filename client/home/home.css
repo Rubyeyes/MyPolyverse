@@ -1,0 +1,139 @@
+.mainbanner {
+	position: relative;
+	margin-top: 50px;
+}
+
+.mainbanner img {
+	width: 100%;
+    position: relative;
+}
+
+.mainbanner .mainbanner-text {
+	position: absolute;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.mainbanner-text p {
+    top: 30%;
+    padding: 20px 0 20px 0;
+    font-size: 40px;
+    color: white;
+    border-radius: 5px;
+    position: relative;
+    font-family: "Hiragino Sans GB";
+    font-weight: lighter;
+}
+
+.banner-text-title {
+	text-align: center;
+	margin-bottom: 10%;
+	font-family: Helvetica;
+	letter-spacing: 5px;
+}
+
+.banner1-text {
+	letter-spacing: 2px;
+	position: absolute;
+	top: 20%;x
+	left: 25%;
+	width: 25%;
+	z-index: 1;
+	padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.banner-content {
+	color: #555;
+	font-family: Helvetica;
+	font-size: 16px;
+	line-height: 35px;
+}
+
+@media screen and (max-width: 1600px) {
+	.banner-text-title {
+		margin-bottom: 5%;
+	}
+	.banner1-text {
+		letter-spacing: 3px;
+		position: absolute;
+		top: 12%;
+		left: 15%;
+		width: 35%;
+	}
+
+}
+
+@media screen and (max-width: 1300px) {
+	.banner1-text {
+		letter-spacing: 3px;
+		position: absolute;
+		top: 5%;
+		left: 15%;
+		width: 40%;
+	}
+
+}
+
+@media screen and (max-width: 1000px) {
+	.banner1-text {
+		letter-spacing: 3px;
+		position: relative;
+		left: 20%;
+		width: 60%;
+	}
+
+}
+
+@media screen and (max-width: 991px) {
+	.socialmedia .col-sm-4 {
+		padding: 0px 30px;
+	}
+	.socialmedia .col-sm-6 {
+		padding: 0px 90px;
+	}
+
+}
+
+@media screen and (max-width: 767px) {
+	.banner1-text {
+		letter-spacing: 3px;
+		position: relative;
+		left: 5%;
+		width: 90%;
+	}
+	.banner-content {
+		line-height: 25px;
+		letter-spacing: 1px;
+	}
+	.banner-text-title {
+		text-align: center;
+		margin-top:10%;
+		margin-bottom: 10%;
+		font-family: Helvetica;
+		letter-spacing: 10px;
+	}
+
+}
+
+@media screen and (max-width: 416px) {
+	.mainbanner {
+		position: relative;
+		overflow: hidden;
+	}
+
+	.mainbanner img.banner1 {
+		width: 180%;
+	    margin-left: -60%;
+	}
+	.banner-text-title {
+		text-align: center;
+		margin-top: 20%;
+		margin-bottom: 10%;
+		font-family: Helvetica;
+		letter-spacing: 10px;
+	}
+}

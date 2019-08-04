@@ -1,0 +1,21 @@
+.navbar {
+	margin-bottom: 0px;
+}
+
+.navbar-second {
+	min-height: 40px;
+	background-color: #333;
+	z-index: 0;
+}
+
+.nav-second-a{
+	color: white;
+}
+
+.dropdown:hover .dropdown-menu {
+	display: block;
+}
+
+.position-inherit {
+	position: inherit;
+}

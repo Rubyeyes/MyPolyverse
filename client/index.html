@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html ng-app="MyApp">
+
+	<head >
+    	<base href="/">
+    	<title ng-bind="$state.current.data.title"></title>
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+		<meta name="description" content="在这里输入描述">
+		<meta name="keywords" content="在这里输入关键词">
+		<!-- bootstrap sylesheet -->
+		<link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.min.css" >
+		<link rel="stylesheet" href="/bower_components/angular-loading-bar/build/loading-bar.min.css" >
+		<link rel="stylesheet" href="/bower_components/angular-material/angular-material.min.css" >
+		<link rel="stylesheet" href="/client.css">
+		<link rel="stylesheet" href="/home/home.css">
+		<link rel="stylesheet" href="./components/navbar/navbar.css">
+		<link rel="stylesheet" href="./components/footer/footer.css">
+
+		<style> .glyphicon-thumbs-up { cursor:pointer } </style>
+		<!-- baidu -->
+		<script>
+			var _hmt = _hmt || [];
+			(function() {
+			  var hm = document.createElement("script");
+			  hm.src = "https://hm.baidu.com/hm.js?6eaaf902f812381401771e3225da37f8";
+			  var s = document.getElementsByTagName("script")[0]; 
+			  s.parentNode.insertBefore(hm, s);
+			})();
+		</script>
+	</head>
+
+	<body>	
+		<navbar></navbar>
+		<div style="background-color: white">
+			<div ui-view></div>
+		</div>
+		<footer></footer>
+
+		<!-- angularjs jquery bootstrap javascript cdn -->
+		<script src="/bower_components/angular/angular.min.js" ></script>
+		<script src="/bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+		<script src="/bower_components/jquery/dist/jquery.min.js"></script>
+		<script src="/bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
+		<script src="/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+		<script src="/bower_components/angular-sanitize/angular-sanitize.min.js"></script>
+		<script src="/bower_components/angular-animate/angular-animate.min.js"></script>
+		<script src="/bower_components/angular-aria/angular-aria.min.js"></script>
+		<script src="/bower_components/angular-material/angular-material.min.js"></script>
+		<script src="/bower_components/angular-messages/angular-messages.min.js"></script>
+		<script src="/bower_components/file-saver/FileSaver.min.js"></script>
+		<script src="/bower_components/angular-loading-bar/build/loading-bar.min.js"></script>
+
+		<!-- angularjs script file -->
+		<script src="/client.js" ></script>
+
+		<script src="/components/factory/auth.factory.js" ></script>
+		<script src="/components/factory/info.factory.js" ></script>
+		<script src="/components/navbar/navbar.ctrl.js" ></script>
+		<script src="/components/navbar/navbar.directive.js" ></script>
+		<script src="/components/footer/footer.ctrl.js" ></script>
+		<script src="/components/footer/footer.directive.js" ></script>
+		<script src="/components/window/scroll_sidebar.directive.js"></script>
+		<script src="/components/window/scroll_backtop.directive.js"></script>
+		<script src="/components/scrollspy/scrollspy.directive.js"></script>
+
+		<script src="/account/auth/auth.ctrl.js" ></script>
+		<script src="/account/auth/auth.directive.js" ></script>
+	</body>
+</html>
+	
+

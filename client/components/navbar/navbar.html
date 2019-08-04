@@ -1,0 +1,64 @@
+<div class="navbar navbar-default navbar-fixed-top navbar-custimize2" id="navbar-id">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button class="navbar-toggle" type="button" ng-click="secondCollaps()">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+
+      <a class="navbar-brand" href="/" ng-style="logoStyle" id="brand">
+        <img alt="XKetoLab" src="../../assets/image/index/logo2.png">
+        <div class="navbar-brand-word">MyPolyverse</div>
+      </a>
+    </div>
+    <div uib-collapse="isSecondCollapsed" class="navbar-collapse collapse">
+
+      <ul class="nav nav-pills navbar-right navbarSecond-left">
+        <li class="btn-group" uib-dropdown is-open="status.isopen_about">
+          <a class="nav-second-a" href="#" ng-disabled="disabled" uib-dropdown-toggle>
+            探寻 <span class="caret"></span>
+          </a>
+          <ul class="dropdown-menu" uib-dropdown-menu role="menu" aria-labelledby="btn-append-to-body">
+            <li role="menuitem"><a ng-click="secondClose()" href="/about?category=us">交通工具</a></li>
+            <li role="menuitem"><a ng-click="secondClose()" href="/about?category=theory">建筑</a></li>
+            <li role="menuitem"><a ng-click="secondClose()" href="/about?category=contribution">武器</a></li>
+            <li role="menuitem"><a ng-click="secondClose()" href="/about?category=share">角色设计</a></li>
+            <li role="menuitem"><a ng-click="secondClose()" href="/about?category=contact">电子产品</a></li>
+            <li role="menuitem"><a ng-click="secondClose()" href="/about?category=contact">时尚产品</a></li>
+            <li role="menuitem"><a ng-click="secondClose()" href="/about?category=contact">家具</a></li>
+            <li role="menuitem"><a ng-click="secondClose()" href="/about?category=contact">运动产品</a></li>
+          </ul>
+        </li>
+        <li class="btn-group" uib-dropdown is-open="status.isopen_articles" >
+          <a class="nav-second-a" href="#" ng-disabled="disabled" uib-dropdown-toggle>
+            专业功能 <span class="caret"></span>
+          </a>
+          <ul class="dropdown-menu" uib-dropdown-menu role="menu" aria-labelledby="btn-append-to-body">
+            <li role="menuitem"><a ng-click="secondClose()" href="/3dprint">3D打印</a></li>
+            <li role="menuitem"><a ng-click="secondClose()" href="/videomake">视频制作</a></li>
+            <li role="menuitem"><a ng-click="secondClose()" href="/patent">一键专利</a></li>
+            <li role="menuitem"><a ng-click="secondClose()" href="/shopping">个性化团购</a></li>
+          </ul>
+        </li>
+        <!-- <li ng-class="{active: isActive('/receipt')}"><a class="nav-second-a" href="https://mp.weixin.qq.com/mp/homepage?__biz=MzIwNjY1MzA5NA==&hid=3&sn=7f838348e7ae4ef141ccb371f2ba8223#wechat_redirect" ng-click="secondClose()" target="_blank">食谱</a></li>
+        <li ng-class="{active: isActive('/learn')}"><a class="nav-second-a" href="/learn" ng-click="secondClose()">知识库</a></li>
+        <li ng-class="{active: isActive('/gigl')}"><a class="nav-second-a" href="/gigl" ng-click="secondClose()">升糖指数/负荷</a></li>
+        <li ng-class="{active: isActive('/calculator')}"><a class="nav-second-a" href="/calculator" ng-click="secondClose()">X生酮计算器</a></li> -->
+        <!-- <li ng-class="{active: isActive('/nutritions')}"><a class="nav-second-a" href="/nutritions" ng-click="secondClose()">营养查询</a></li> -->
+        <li ng-hide="isLoggedIn()" ng-class="{active: isActive('/login')}"><a class="nav-second-a" href="/login">登录</a></li>
+        <li class="dropdown" ng-show="isLoggedIn()">
+          <a ng-hide="isAdmin()" href="/profile" class="dropdown-toggle nav-second-a" data-toggle="dropdown " role="button">
+            欢迎 {{ currentUser() }} <span class="caret"></span>
+          </a>
+          <a ng-show="isAdmin()" href="/admin_setting" class="dropdown-toggle nav-second-a" data-toggle="dropdown" role="button">
+            欢迎 {{ currentUser() }} <span class="caret"></span>
+          </a>
+        </li>
+        <li ng-show="isLoggedIn()"><a class="nav-second-a" ng-click="logOut()" href="#">注销</a></li>
+        <li ng-hide="isLoggedIn()" ng-class="{active: isActive('/login')}"><a class="nav-second-a" href="/login">注册</a></li>
+        <li ng-hide="isLoggedIn()" ng-class="{active: isActive('/login')}"><a class="nav-second-a" href="/login">上传</a></li>
+      </ul>
+    </div>
+  </div>

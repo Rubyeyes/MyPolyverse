@@ -1,0 +1,21 @@
+
+<div class="panel panel-head panel-profile">
+	<h1>{{"PROFILE" | translate}}</h1>
+	<table class="table table-condense table-about">
+		<tr>
+			<th>{{"NAME" | translate}}</th>
+			<td>{{user.username}}</td>
+		</tr>
+		<tr>
+			<th>{{"EMAIL" | translate}}</th>
+			<td>{{user.email}}</td>
+		</tr>
+		<tr>
+			<th>{{"PHONE" | translate}} {{"NUMBER" | translate}}</th>
+			<td>{{user.phone_number}}</td>
+		</tr>
+	</table>
+</div>
+
+
+<button class="btn btn-primary btn-logout" ng-click="logOut()"><a href="#">{{"LOG_OUT" | translate}}</a></button>

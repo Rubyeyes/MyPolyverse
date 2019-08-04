@@ -1,0 +1,104 @@
+<div class="navbar navbar-default navbar-static-top navbar-custimize" ng-style="navStyle">
+  <div class="container-fluid">
+    <div class="navbar-header navbar-main">
+     <!--  <li class="navbar-toggle" type="button" ng-click="collaps()">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </li> -->
+      <a class="navbar-brand" href="/" ng-style="logoStyle" id="brand">
+        <img alt="XKetoLab" src="../../assets/image/index/logo.png">
+        <div class="navbar-brand-word">XKetoLab</div>
+      </a>
+    </div>
+    <!-- <div uib-collapse="isCollapsed" class="navbar-collapse collapse" id="navbar-main"> -->
+
+
+      <ul class="nav navbar-nav navbar-right navbar-right-main">
+        <!-- <li ng-hide="isLoggedIn()" ng-class="{active: isActive('/signup')}"><a href="/register">注册</a></li> -->
+        <li ng-hide="isLoggedIn()" ng-class="{active: isActive('/login')}"><a href="/login">登录</a></li>
+        <li class="dropdown" ng-show="isLoggedIn()">
+          <a ng-hide="isAdmin()" href="/profile" class="dropdown-toggle" data-toggle="dropdown" role="button">
+            欢迎 {{ currentUser() }} <span class="caret"></span>
+          </a>
+          <a ng-show="isAdmin()" href="/admin_setting" class="dropdown-toggle" data-toggle="dropdown" role="button">
+            欢迎 {{ currentUser() }} <span class="caret"></span>
+          </a>
+        </li>
+        <li ng-show="isLoggedIn()"><a ng-click="logOut()" href="#">注销</a></li>
+
+        <!-- <li class="btn-group first-bar-li" uib-dropdown is-open="status.isopen_about">
+          <a class="nav-second-a" href="#" ng-disabled="disabled" uib-dropdown-toggle ng-click="secondClose()">
+            关于我们 <span class="caret"></span>
+          </a>
+          <ul class="dropdown-menu" uib-dropdown-menu role="menu" aria-labelledby="btn-append-to-body">
+            <li role="menuitem"><a ng-click="secondClose()" href="/about?category=us">关于X生酮实验室</a></li>
+            <li role="menuitem"><a ng-click="secondClose()" href="/about?category=theory">不作恶</a></li>
+            <li role="menuitem"><a ng-click="secondClose()" href="/about?category=contribution">投稿</a></li>
+            <li role="menuitem"><a ng-click="secondClose()" href="/about?category=share">转载须知</a></li>
+            <li role="menuitem"><a ng-click="secondClose()" href="/about?category=contact">联系我们</a></li>
+          </ul>
+        </li>
+        <li class="btn-group first-bar-li" uib-dropdown is-open="status.isopen_articles" >
+          <a class="nav-second-a" href="#" ng-disabled="disabled" uib-dropdown-toggle ng-click="secondClose()">
+            学习生酮 <span class="caret"></span>
+          </a>
+          <ul class="dropdown-menu" uib-dropdown-menu role="menu" aria-labelledby="btn-append-to-body">
+            <li role="menuitem"><a ng-click="secondClose()" href="/articles?category=theory">理论死磕</a></li>
+            <li role="menuitem"><a ng-click="secondClose()" href="/articles?category=practice">实践攻略</a></li>
+            <li role="menuitem"><a ng-click="secondClose()" href="/articles?category=women">女性关怀</a></li>
+            <li role="menuitem"><a ng-click="secondClose()" href="/articles?category=recipe">食谱分享</a></li>
+          </ul>
+        </li>
+        <li ng-class="{active: isActive('/calculator')} first-bar-li"><a class="nav-second-a" href="/calculator" ng-click="secondClose()">减脂计算</a></li> -->
+      </ul>
+    <!-- </div> -->
+  </div>
+</div>
+
+<div class="navbar navbar-default navbar-static-top navbar-custimize">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button class="navbar-toggle" type="button" ng-click="secondCollaps()">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+    <div uib-collapse="isSecondCollapsed" class="navbar-collapse collapse">
+
+      <ul class="nav nav-pills navbar-left navbarSecond-left">
+        <li class="btn-group" uib-dropdown is-open="status.isopen_about">
+          <a class="nav-second-a" href="#" ng-disabled="disabled" uib-dropdown-toggle>
+            关于我们 <span class="caret"></span>
+          </a>
+          <ul class="dropdown-menu" uib-dropdown-menu role="menu" aria-labelledby="btn-append-to-body">
+            <li role="menuitem"><a href="/about/about_us">关于X生酮实验室</a></li>
+            <li role="menuitem"><a href="/about/about_theory">不作恶</a></li>
+            <li role="menuitem"><a href="/about/about_contribution">投稿</a></li>
+            <li role="menuitem"><a href="/about/about_share">转载须知</a></li>
+            <li role="menuitem"><a href="/about/about_contact">联系我们</a></li>
+          </ul>
+        </li>
+        <li class="btn-group" uib-dropdown is-open="status.isopen_articles" >
+          <a class="nav-second-a" href="#" ng-disabled="disabled" uib-dropdown-toggle>
+            学习生酮 <span class="caret"></span>
+          </a>
+          <ul class="dropdown-menu" uib-dropdown-menu role="menu" aria-labelledby="btn-append-to-body">
+            <li role="menuitem"><a href="/articles?category=theory">理论死磕</a></li>
+            <li role="menuitem"><a href="/articles?category=practice">实践攻略</a></li>
+            <li role="menuitem"><a href="/articles?category=women">女性关怀</a></li>
+            <li role="menuitem"><a href="/articles?category=recipe">食谱分享</a></li>
+          </ul>
+        </li>
+        <li ng-class="{active: isActive('/nutritions')}"><a class="nav-second-a" href="/nutritions">营养查询</a></li>
+        <li ng-class="{active: isActive('/support')}"><a class="nav-second-a" href="/support">资助</a></li>
+
+        <!-- <li ng-class="{active: isActive('/admin_setting')}" ng-show="isAdmin()"><a class="nav-second-a" href="/admin_setting">Admin Setting</a></li>
+        <li ng-class="{active: isActive('/admin_data')}" ng-show="isAdmin()"><a class="nav-second-a" href="/admin_data">Admin Data</a></li> -->
+      </ul>
+    </div>
+  </div>
+</div>

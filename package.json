@@ -1,0 +1,58 @@
+{
+  "name": "mytemplate",
+  "version": "1.0.0",
+  "description": "A general template",
+  "private": true,
+  "engines": {
+    "node": "5.9.0",
+    "npm": "3.7.3"
+  },
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "body-parser": "1.13.2",
+    "bower": "1.7.9",
+    "cheerio": "^0.22.0",
+    "cloudinary": "",
+    "cookie-parser": "1.3.5",
+    "datauri": "^1.0.4",
+    "debug": "2.2.0",
+    "ejs": "2.3.3",
+    "express": "4.13.1",
+    "express-jwt": "3.3.0",
+    "google-translate": "^1.0.7",
+    "jsonwebtoken": "5.7.0",
+    "mongodb": "^2.1.18",
+    "mongoose": "4.4.12",
+    "mongoose-search-plugin": "^0.1.2",
+    "mongoose-searchable": "^1.0.0",
+    "mongoose-text-search": "0.0.2",
+    "morgan": "1.6.1",
+    "multer": "^1.1.0",
+    "nodemailer": "^2.6.0",
+    "nodemon": "1.9.1",
+    "passport": "0.3.2",
+    "passport-local": "1.0.0",
+    "request": "^2.79.0",
+    "sendgrid": "^3.0.5",
+    "serve-favicon": "2.3.0",
+    "url-parse": "^1.1.7",
+    "wechat": "^2.0.3"
+  },
+  "main": "app.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rubyeyes/UELimoGroup.git"
+  },
+  "keywords": [
+    "nodejs",
+    "angularjs"
+  ],
+  "author": "Changan Tian",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Rubyeyes/UELimoGroup/issues"
+  },
+  "homepage": "https://github.com/Rubyeyes/UELimoGroup#readme"
+}

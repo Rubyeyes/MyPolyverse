@@ -1,0 +1,23 @@
+.panel-auth {
+	background-color: transparent;
+	margin-top: 30px;
+	padding:40px;
+}
+
+.panel-auth > form > div.form-group > label {
+	font-size: 16px;
+	font-weight: bold;
+}
+
+.btn-auth {	
+	background-color: #a1774f;
+	border-color: #a1774f;
+}
+
+.auth-title {
+	color:#555;
+}
+
+.hr-auth {
+	margin-top: 3px;
+}
